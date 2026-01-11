@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Part 2 XML Documentation</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Arial,sans-serif;max-width:1000px;margin:40px auto;padding:0 16px}
+    a{color:#0b5fff;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    input{width:100%;padding:10px 12px;border:1px solid #ccc;border-radius:10px;margin:14px 0}
+    li{margin:8px 0}
+    .pill{border:1px solid #ddd;border-radius:999px;padding:6px 10px}
+  </style>
+</head>
+<body>
+  <div class="top">
+    <h1>XML Documentation — Part 2</h1>
+    <span class="pill"><a href="../index.html">← Back to main</a></span>
+  </div>
+
+  <p>Search and open class / test documentation pages:</p>
+  <input id="q" placeholder="Search (e.g., AppCanvas, VariableStore, TestWhile)..." />
+
+  <ul id="list">
+    <li><a href="./AppArray.html">AppArray</a></li>
+    <li><a href="./AppBoolean.html">AppBoolean</a></li>
+    <li><a href="./AppCall.html">AppCall</a></li>
+    <li><a href="./AppCanvas.html">AppCanvas</a></li>
+    <li><a href="./AppCircle.html">AppCircle</a></li>
+    <li><a href="./AppClear.html">AppClear</a></li>
+    <li><a href="./AppClearArray.html">AppClearArray</a></li>
+    <li><a href="./AppCommandFactory.html">AppCommandFactory</a></li>
+    <li><a href="./AppDrawTo.html">AppDrawTo</a></li>
+    <li><a href="./AppElse.html">AppElse</a></li>
+    <li><a href="./AppEndFor.html">AppEndFor</a></li>
+    <li><a href="./AppEndIf.html">AppEndIf</a></li>
+    <li><a href="./AppEndWhile.html">AppEndWhile</a></li>
+    <li><a href="./AppFor.html">AppFor</a></li>
+    <li><a href="./AppIf.html">AppIf</a></li>
+    <li><a href="./AppInt.html">AppInt</a></li>
+    <li><a href="./AppMoveTo.html">AppMoveTo</a></li>
+    <li><a href="./AppParser.html">AppParser</a></li>
+    <li><a href="./AppPeek.html">AppPeek</a></li>
+    <li><a href="./AppPenColour.html">AppPenColour</a></li>
+    <li><a href="./AppPoke.html">AppPoke</a></li>
+    <li><a href="./AppReal.html">AppReal</a></li>
+    <li><a href="./AppRect.html">AppRect</a></li>
+    <li><a href="./AppReset.html">AppReset</a></li>
+    <li><a href="./AppWhile.html">AppWhile</a></li>
+    <li><a href="./AppWrite.html">AppWrite</a></li>
+
+    <li><a href="./AssignmentCommand.html">AssignmentCommand</a></li>
+    <li><a href="./ConditionEvaluator.html">ConditionEvaluator</a></li>
+    <li><a href="./ExpressionEvaluator.html">ExpressionEvaluator</a></li>
+    <li><a href="./IVariableStore.html">IVariableStore</a></li>
+    <li><a href="./MethodStore.html">MethodStore</a></li>
+    <li><a href="./Program.html">Program</a></li>
+    <li><a href="./VariableStore.html">VariableStore</a></li>
+
+    <li><a href="./Test1.html">Test1</a></li>
+    <li><a href="./TestDrawTo.html">TestDrawTo</a></li>
+    <li><a href="./TestFor.html">TestFor</a></li>
+    <li><a href="./TestIf.html">TestIf</a></li>
+    <li><a href="./TestMethod.html">TestMethod</a></li>
+    <li><a href="./TestProgramRun.html">TestProgramRun</a></li>
+    <li><a href="./TestVariables.html">TestVariables</a></li>
+    <li><a href="./TestWhile.html">TestWhile</a></li>
+  </ul>
+
+  <script>
+    const q = document.getElementById("q");
+    const items = [...document.querySelectorAll("#list li")];
+    q.addEventListener("input", () => {
+      const term = q.value.toLowerCase().trim();
+      items.forEach(li => li.style.display = li.innerText.toLowerCase().includes(term) ? "" : "none");
+    });
+  </script>
+</body>
+</html>
