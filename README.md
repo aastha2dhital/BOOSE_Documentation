@@ -1,2 +1,2 @@
 # BOOSE_Documentation
-# This is the BOOSE Documentation Site for the project, here is the link [BOOSE DOCS](https://github.com/aastha2dhital/BOOSE_Documentation/tree/main/XML%20Documentation)
+# This is the BOOSE Documentation Site for the project, here is the link [https://aastha2dhital.github.io/BOOSE_Documentation/XML%20Documentation-%20PART2/]
